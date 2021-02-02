@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mathematics Lab</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #262626 !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand c-logo" href="#">Mathematics Lab</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link c-white" href="#">Calculator</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link c-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="Exams.html" target="_blank" class="nav-link c-white" href="#">The Exams</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </form>
+          <button class="btn btn-outline-success ml-5" type="submit">Sign In</button>
+          <button class="btn btn-outline-success" type="submit">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+  <!-----------------------------
+        Section What They Say !
+    ------------------------------->
+
+    <section class="section_pd ahmed_What_They_Say">
+      <div class="container">
+        <div class="overlayy">
+          <div class="ahmed_section_heading">
+            <h3>Mathematics Lab!</h3>
+            <div class="line"></div>
+            <p>
+              must explain to you how all this mistaken idea of denouncing.
+            </p>
+          </div><br><br>
+        </div>
+      </div>
+      <div class="math"></div>
+      <div class="math2"></div>
+    </section>
+
+    <!-- ssssssssss -->
+    <section class="calc">
+    <div class="containerr">
+      <form name="form">
+      <div class="display">
+        <input type="text" placeholder="0" name="displayResult" />
+      </div>
+        <div class="buttons">
+          <div class="roww">
+          <input type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
+            <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+            <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+            <input type="button" name="addb" value="+" onClick="calcNumbers(addb.value)">
+          </div>
+          
+          <div class="row">
+          <input type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
+            <input type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+            <input type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+            <input type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
+          </div>
+          
+          <div class="row">
+          <input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+            <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+            <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+            <input type="button" name="mulb" value="*" onClick="calcNumbers(mulb.value)">
+          </div>
+          
+          <div class="row">
+          <input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
+            <input type="button" name="potb" value="." onClick="calcNumbers(potb.value)">
+            <input type="button" name="divb" value="/" onClick="calcNumbers(divb.value)">
+            <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+          </div>
+        </div>
+      
+      </form>
+    </div>
+  </section>
+  <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jguery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

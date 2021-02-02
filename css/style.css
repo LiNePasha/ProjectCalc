@@ -1,0 +1,273 @@
+/*==========================================================================================================
+========================================The Owner:Eman Ebrahim==============================================
+    1-General Style
+    2-Common Styles /
+      ├── General Style
+      ├── The Duplicate things
+      └── Change Color
+    3-Sections Styles /
+        ├── 1 -header Sec              ====(For Header Section With),
+        ├── 2 -About Us                ====(For Section About US ),
+        ├── 3 -Our Services            ====(For Section Our Service ),
+        ├── 4 -Our Portifolio          ====(For Section Our Portfolio ),
+        ├── 6 -Our Pricing             ====(For Section Our Pricing ),
+        ├── 7 -Our Team                ====(For Section Our Team ),
+        ├── 8 -Why Choose Us           ====(For Section Why Choose ),
+        ├── 9 -What That Say           ====(For Section What That S),
+        ├── 10 - Our Blog              ====(For Section Our Blog),
+        ├── 11 - Get Started           ====(For Section Get Start),
+        ├── 12 -Contact US             ====(For Section Contact ),
+        ├── 13 -Footer Top             ====(For Section Footer T),
+        └── 14 -Footer Bootom          ====(For Section Footer Boot).
+============================================================================================================*/
+
+/*=====================
+    General Style !
+=======================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+:root {
+  --WhiteColor           :  #fff;
+  --BlackColor           : #000;
+  --BlackBro             : #333;
+  --LightGrayColor       :  #ccc;
+  --LightGreenColor      :  #7cb62f;
+  --LightBlackColor      :  #232323;
+  --PdSection            : 60px 0 60px 0 ;
+  --SectionGrayColor     : #f7f7f7 ;
+  --RedColor             : #f00;
+}
+
+.c-white {
+  color: var(--WhiteColor) !important;
+}
+
+.c-white:hover {
+  border: 1px solid green;
+}
+
+.c-logo {
+  color: var(--LightGreenColor) !important ;
+}
+/*=========================
+    The Duplicate things !
+===========================*/
+
+.ahmed_section_heading {
+  text-align: center;
+}
+
+.ahmed_section_heading > h3 {
+  font-family: 'Krona One', sans-serif;
+}
+
+.ahmed_section_heading .line {
+  margin: auto;
+  width: 10%;
+  height: 2px;
+  background: var(--LightGrayColor);
+  position: relative;
+}
+
+.ahmed_section_heading .line::before {
+    background: var(--LightGreenColor);
+    content: "";
+    height: 5px;
+    right: 20%;
+    position: absolute;
+    bottom: 5%;
+    width: 60%;
+}
+
+.ahmed_section_heading p {
+  font-size: 2rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.section_pd {
+  padding: var(--PdSection);
+}
+
+@media only screen and (max-width: 600px) {
+  .ahmed_section_heading p  {
+    font-size: .9rem;
+  }
+}
+
+/*=====================
+    9 -What That Say !
+=======================*/
+
+.ahmed_What_They_Say {
+  width: 100%;
+  height: 40rem;
+  background: #262626 ;
+  /*background:;
+  url("https://preview-unifox.netlify.app/assets/images/bg/client-say-bg.jpg") no-repeat scroll 0 0 / cover ;
+  */position: relative;
+  color: var(--WhiteColor);
+  border-radius: 0 0 50% 50%/0 0 100% 100% ;
+  -webkit-border-radius: 0 0 50% 50%/0 0 100% 100% ;
+  -moz-border-radius: 0 0 50% 50%/0 0 100% 100% ;
+  -ms-border-radius: 0 0 50% 50%/0 0 100% 100% ;
+  -o-border-radius: 0 0 50% 50%/0 0 100% 100% ;
+}
+
+.overlayy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background: rgba(0, 0, 0, 0.7); */
+  padding: 5rem 5rem;
+}  
+
+.ahmed_finish {
+  background: transparent ;
+}
+.ahmed_finish .item:nth-of-type(1){
+width: 100%;
+height: 15rem;
+/* background: rgba(0, 0, 0, 0.7) ; */
+background: url("https://i.ytimg.com/vi/hzvtVKuIw9Q/hqdefault.jpg")  ;
+/* text-align: center;
+padding: 3rem;
+color: var(--WhiteColor); */
+} 
+.ahmed_finish .item:nth-of-type(2){
+  width: 100%;
+  height: 15rem;
+  background: rgba(0, 0, 0, 0.7) ;
+  /* background: url("https://i.ytimg.com/vi/hzvtVKuIw9Q/hqdefault.jpg")  ; */
+  /* text-align: center;
+  padding: 3rem;
+  color: var(--WhiteColor); */
+  }
+.ahmed_finish .item img{
+  /* width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 3px solid var(--WhiteColor);
+  margin: auto; */
+  width: 100%;
+  height: 100%;
+}
+
+.ahmed_finish .item img,
+.ahmed_finish .item h4{
+  display: none;
+}
+
+.math {
+  position: absolute;
+  background: url("https://images-na.ssl-images-amazon.com/images/I/91dbHsYj-mL.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 17rem;
+  left: 1rem;
+  height: 25rem;
+}
+.math2 {
+  position: absolute;
+  background: url("https://images-na.ssl-images-amazon.com/images/I/51LaDM1GPzL.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 1rem;
+  width: 17rem;
+  height: 25rem;
+}
+body {
+  height: 200rem;
+}
+
+
+.hov:hover .dropdown-menu {
+  display: block !important;
+}
+
+/* sssssssssssssssssssss */
+.containerr {
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+  border-radius: 14px;
+  padding-bottom: 20px;
+  width: 320px;
+  margin: auto;
+  
+}
+.display {
+  width: 100%;
+  height: 70px;
+  padding: 10px 0 0 0 ;
+  background: var(--LightGreenColor);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.buttons {
+  padding: 20px 20px 0 20px;
+}
+.roww {
+  width: 280px;
+  float: left;
+}
+input[type=button] {
+  width: 60px;
+  height: 60px;
+  float: left;
+  padding: 0;
+  margin: 5px;
+  box-sizing: border-box;
+  background: #ecedef;
+  border: none;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #5E5858;
+  cursor: pointer;
+  
+}
+input[type=text] {
+  width: 270px;
+  height: 60px;
+  float: left;
+  border: none;
+  background: none;
+  color: #ffffff;
+  text-align: right;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0 25px;
+  
+}
+.red {
+  background: var(--LightGreenColor) !important;
+  color: #ffffff !important;
+}
+
+.calc {
+  width: 100%;
+  background: #262626;
+  padding: 5rem;
+}
